@@ -9,6 +9,7 @@ sudo apt purge rustc -y
 sudo apt autoremove -y
 # remove outdated existing versions of rust
 sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3  -y
+echo "f"
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source ~/.bashrc
 rustup update stable
