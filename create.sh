@@ -1,6 +1,5 @@
-cd ~
-
-mkdir tmp && cd tmp
+#cd ~
+#mkdir tmp && cd tmp
 
 sudo apt install i3 picom neofetch hsetroot rofi -y
 
@@ -37,3 +36,5 @@ source ~/.bashrc
 
 # sudo apt install task-lxqt-desktop -y
 # sudo apt install task-gnome-desktop -y
+
+startx
