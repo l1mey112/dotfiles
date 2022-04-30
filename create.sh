@@ -1,7 +1,9 @@
 #cd ~
 #mkdir tmp && cd tmp
 
-sudo apt install i3 picom neofetch hsetroot rofi -y
+sudo apt install i3 picom neofetch rofi hsetroot -y
+
+# 
 
 # alacritty
 sudo apt purge rustc -y
