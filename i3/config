@@ -13,7 +13,7 @@
 #? --- i3-gaps ---
 for_window [class=".*"] border pixel 0
 
-gaps inner 6
+gaps inner 12
 gaps outer 2
 
 # border_radius 8
