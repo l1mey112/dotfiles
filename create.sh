@@ -1,11 +1,8 @@
-#cd ~
-#mkdir tmp && cd tmp
+sudo apt install i3 neofetch hsetroot flameshot -y
 
-sudo apt install i3 picom neofetch rofi hsetroot -y
+# rofi picom
 
-# 
-
-# alacritty
+#? --- install alacritty latest version
 sudo apt purge rustc -y
 sudo apt autoremove -y
 # remove outdated existing versions of rust
@@ -15,8 +12,9 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source ~/.bashrc
 rustup update stable
 cargo install alacritty
+#? --- install alacritty latest version
 
-sudo apt install gdebi-core -y
+sudo apt install gdebi-core
 wget -O code.deb "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
 sudo gdebi code.deb -y
 
@@ -35,6 +33,15 @@ git config --global user.email "liam12312390@gmail.com"
 git config --global user.name "liaml"
 
 source ~/.bashrc
+
+#? --- fonts (JetBrainsMono.zip)
+wget -L https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
+sudo apt install zip unzip
+mkdir -p ~/.local/share/fonts/NerdFonts
+unzip -o JetBrainsMono.zip -d ~/.local/share/fonts/NerdFonts
+fc-cache -f -v
+# fc-list | grep "Nerd" 
+#? --- fonts (JetBrainsMono.zip)
 
 # sudo apt install task-lxqt-desktop -y
 # sudo apt install task-gnome-desktop -y
