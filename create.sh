@@ -26,7 +26,7 @@ cargo install alacritty
 
 sudo apt install gdebi-core
 wget -O code.deb "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
-sudo gdebi code.deb -y
+sudo gdebi code.deb
 
 sudo apt install firefox-esr  -y
 
