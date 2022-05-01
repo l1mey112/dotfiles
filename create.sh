@@ -11,7 +11,7 @@ mkdir -p ~/tmp/i3-gaps/build
 meson ~/tmp/i3-gaps/ ~/tmp/i3-gaps/build
 sudo ninja install -C ~/tmp/i3-gaps/build/
 
-sudo apt install i3status suckless-tools dunst i3lock
+sudo apt install i3status suckless-tools dunst i3lock -y
 #? i3 main package deps
 #? --- i3-gaps ---
 
@@ -21,7 +21,7 @@ sudo apt autoremove -y
 # remove outdated existing versions of rust
 sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3  -y
 echo "f"
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh;
 source ~/.bashrc
 echo 'source $HOME/.cargo/env' >> ~/.bashrc
 source $HOME/.cargo/env
