@@ -1,6 +1,8 @@
 sudo apt install neofetch hsetroot flameshot -y
 # rofi picom
 
+#? git clone https://github.com/l1mey112/dotfiles.git && mv dotfiles .config
+
 #? --- i3-gaps ---
 #? https://github.com/Airblader/i3/wiki/Building-from-source
 #sudo apt install i3 -y
