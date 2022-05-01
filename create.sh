@@ -22,17 +22,17 @@ sudo apt install neofetch hsetroot flameshot -y
 #? --- i3-gaps ---
 
 #? --- install alacritty latest version
-sudo apt purge rustc -y
-sudo apt autoremove -y
-# remove outdated existing versions of rust
-sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3  -y
-echo "f"
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh;
-echo 'source $HOME/.cargo/env' >> ~/.bashrc
-source ~/.bashrc
-source $HOME/.cargo/env
-rustup update stable
-cargo install alacritty
+#sudo apt purge rustc -y
+#sudo apt autoremove -y
+## remove outdated existing versions of rust
+#sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3  -y
+#echo "f"
+#curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh;
+#echo 'source $HOME/.cargo/env' >> ~/.bashrc
+#source ~/.bashrc
+#source $HOME/.cargo/env
+#rustup update stable
+#cargo install alacritty
 #? --- install alacritty latest version
 
 sudo apt install gdebi-core
