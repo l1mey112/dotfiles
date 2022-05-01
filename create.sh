@@ -52,6 +52,8 @@ wget -L https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrai
 sudo apt install zip unzip
 mkdir -p ~/.local/share/fonts/NerdFonts
 unzip -o JetBrainsMono.zip -d ~/.local/share/fonts/NerdFonts
+rm -f JetBrainsMono*
+# delete copies
 fc-cache -f -v
 # fc-list | grep "Nerd" 
 #? --- fonts (JetBrainsMono.zip)
