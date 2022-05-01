@@ -1,6 +1,17 @@
-sudo apt install i3 neofetch hsetroot flameshot -y
-
+sudo apt install neofetch hsetroot flameshot -y
 # rofi picom
+
+#? --- i3-gaps ---
+#? https://github.com/Airblader/i3/wiki/Building-from-source
+sudo apt install dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-shape0 libxcb-shape0-dev
+mkdir -p ~/tmp
+git clone https://www.github.com/Airblader/i3 ~/tmp/i3-gaps
+
+mkdir -p ~/tmp/i3-gaps/build
+meson ~/tmp/i3-gaps/ ~/tmp/i3-gaps/build
+sudo ninja install -C ~/tmp/i3-gaps/build/
+#? --- i3-gaps ---
+
 
 #? --- install alacritty latest version
 sudo apt purge rustc -y
