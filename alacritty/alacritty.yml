@@ -28,6 +28,8 @@ colors:
     foreground: '#fdf4c1'
 
   # Normal colors
+  # todo change RED?
+  # todo so it looks better in neofetch
   normal:
     black:   '#282828'
     red:     '#9d0006'
