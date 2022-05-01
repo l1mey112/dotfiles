@@ -14,7 +14,7 @@ bindsym Print exec flameshot gui
 for_window [class=".*"] border pixel 0
 #gaps inner all set 20
 #gaps outer current plus 5
-
+ 
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
