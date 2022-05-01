@@ -15,4 +15,4 @@ meson --prefix /usr/local
 ninja
 sudo ninja install
 
-ln -s ~/.config/.xinitrc ~/
+ln -s ~/.config/local/.xinitrc ~/
