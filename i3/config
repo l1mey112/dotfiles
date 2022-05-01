@@ -12,7 +12,7 @@ bindsym Print exec flameshot gui
 
 #? --- i3-gaps ---
 for_window [class=".*"] border pixel 0
-
+gaps inner all set 20
 
 # i3 config file (v4)
 #
