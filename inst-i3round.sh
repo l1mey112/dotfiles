@@ -15,4 +15,6 @@ meson --prefix /usr/local
 ninja
 sudo ninja install
 
+sudo apt install -t bullseye-backports feh i3blocks i3lock i3status sakura suckless-tools xorg
+
 ln -s ~/.config/local/.xinitrc ~/
