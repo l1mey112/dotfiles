@@ -10,6 +10,14 @@ bindsym Print exec flameshot gui
 
 #? --- i3-gaps ---
 for_window [class=".*"] border pixel 0
+
+gaps inner 6
+gaps outer 2
+
+border_radius 8
+
+#smart_gaps on
+
 #gaps inner all set 20
 #gaps outer current plus 5
 
