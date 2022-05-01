@@ -3,14 +3,18 @@ sudo apt install neofetch hsetroot flameshot -y
 
 #? --- i3-gaps ---
 #? https://github.com/Airblader/i3/wiki/Building-from-source
-sudo apt install i3 -y
-sudo apt install meson ninja-build dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-shape0 libxcb-shape0-dev -y
-mkdir -p ~/tmp
-git clone https://www.github.com/Airblader/i3 ~/tmp/i3-gaps
+#sudo apt install i3 -y
+#sudo apt install meson ninja-build dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-shape0 libxcb-shape0-dev -y
+#mkdir -p ~/tmp
+#git clone https://www.github.com/Airblader/i3 ~/tmp/i3-gaps
+#
+#mkdir -p ~/tmp/i3-gaps/build
+#meson ~/tmp/i3-gaps/ ~/tmp/i3-gaps/build
+#sudo ninja install -C ~/tmp/i3-gaps/build/
 
-mkdir -p ~/tmp/i3-gaps/build
-meson ~/tmp/i3-gaps/ ~/tmp/i3-gaps/build
-sudo ninja install -C ~/tmp/i3-gaps/build/
+wget -L https://github.com/barnumbirr/i3-gaps-debian/releases/download/v4.20.1-1/i3-gaps_4.20.1-1_amd64_bullseye.deb -O i3-gaps.deb
+sudo gdebi i3-gaps.deb
+
 #? i3 main package deps
 #? --- i3-gaps ---
 
