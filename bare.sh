@@ -14,7 +14,13 @@ meson --prefix /usr/local
 ninja
 sudo ninja install
 
-sudo apt install -t bullseye-backports feh i3blocks i3lock i3status sakura suckless-tools xorg -y
+sudo apt install -t bullseye-backports feh i3blocks i3lock i3status suckless-tools xorg -y
 sudo apt install neofetch hsetroot flameshot -y
 
 ln -s ~/.config/local/.xinitrc ~/
+
+# ? alacritty
+# https://github.com/barnumbirr/alacritty-debian
+wget -L -O alacritty.deb https://github.com/barnumbirr/alacritty-debian/releases/download/v0.9.0-1/alacritty_0.9.0-1_amd64_debian_buster.deb
+sudo apt install gdebi
+sudo gdebi alacritty.deb

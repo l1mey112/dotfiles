@@ -18,6 +18,9 @@ gaps outer 2
 
 border_radius 8
 
+# start a terminal
+bindsym $mod+Return exec i3-sensible-terminal
+
 set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -48,9 +51,6 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
-
-# start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
