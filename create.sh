@@ -57,4 +57,4 @@ fc-cache -f -v
 # sudo apt install task-lxqt-desktop -y
 # sudo apt install task-gnome-desktop -y
 
-startx
+#startx
