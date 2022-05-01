@@ -1,3 +1,3 @@
 hsetroot -tile ~/.config/wallpaper.png
-exec picom &
+picom &
 exec i3 
