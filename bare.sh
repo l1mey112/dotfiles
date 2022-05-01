@@ -15,7 +15,7 @@ ninja
 sudo ninja install
 
 sudo apt install -t bullseye-backports feh i3blocks i3lock i3status suckless-tools xorg -y
-sudo apt install neofetch hsetroot flameshot -y
+sudo apt install neofetch hsetroot flameshot lolcat -y
 
 ln -s ~/.config/local/.xinitrc ~/
 
