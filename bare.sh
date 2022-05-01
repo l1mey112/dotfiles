@@ -18,7 +18,7 @@ sudo apt install -t bullseye-backports feh i3blocks i3lock i3status suckless-too
 sudo apt install neofetch hsetroot flameshot lolcat mesa-utils -y
 # mesa-utils for opengl glxinfo
 
-ln -s ~/.config/local/.xinitrc ~/
+ln -s ~/.config/local/* ~/
 
 # ? alacritty
 # https://github.com/barnumbirr/alacritty-debian

@@ -39,16 +39,14 @@
 *.color7  : #e5e9f0
 *.color15 : #d1d5dc
 
-! ------------------------------------------------------------------------------
-! Xft Font Configuration
-! ------------------------------------------------------------------------------
-
+! font config, for improved rendering
 Xft.autohint: 0
-Xft.lcdfilter: lcddefault
-Xft.hintstyle: hintslight
-Xft.hinting: 1
 Xft.antialias: 1
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.dpi: 96
 Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
 
 ! ------------------------------------------------------------------------------
 ! Dmenu configs
