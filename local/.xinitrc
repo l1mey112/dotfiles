@@ -1,2 +1,2 @@
-#hsetroot -center ~/.config/wallpaper.png
+hsetroot -tile ~/.config/wallpaper.png
 exec i3
