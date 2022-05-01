@@ -22,8 +22,8 @@ sudo apt autoremove -y
 sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3  -y
 echo "f"
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh;
-source ~/.bashrc
 echo 'source $HOME/.cargo/env' >> ~/.bashrc
+source ~/.bashrc
 source $HOME/.cargo/env
 rustup update stable
 cargo install alacritty
