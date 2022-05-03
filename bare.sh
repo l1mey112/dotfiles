@@ -1,29 +1,29 @@
-# https://lottalinuxlinks.com/how-to-build-and-install-i3-gaps-on-debian/
+##https://github.com/barnumbirr/i3-gaps-debian/releases/tag/v4.20.1-1
+#
+#wget -nc https://github.com/barnumbirr/i3-gaps-debian/releases/download/v4.20.1-1/i3-gaps_4.20.1-1_amd64_bullseye.deb -O i3-gaps.deb
+##  -nc, --no-clobber: skip downloads that would download to existing files.
+#sudo gdebi i3-gaps.deb
+#
+#sudo apt install -t bullseye-backports feh i3blocks i3lock i3status suckless-tools xorg -y
+#sudo apt install neofetch hsetroot flameshot lolcat mesa-utils -y
+## mesa-utils for opengl glxinfo
+#
+## ln -s ~/.config/local/* ~/
+#
+## ? alacritty
+## https://github.com/barnumbirr/alacritty-debian
+#wget -nc -L -O alacritty.deb https://github.com/barnumbirr/alacritty-debian/releases/download/v0.9.0-1/alacritty_0.9.0-1_amd64_debian_buster.deb
+#
+#sudo apt install gdebi
+#sudo gdebi alacritty.deb
+#
+## 4.19.1-non-git
 
-sudo apt purge i3 -y
-sudo apt install meson dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-shape0 libxcb-shape0-dev
+sudo apt install libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-xinerama0-dev libxcb-glx0-dev libpixman-1-dev libdbus-1-dev libconfig-dev libgl1-mesa-dev libpcre2-dev libpcre3-dev libevdev-dev uthash-dev libev-dev libx11-xcb-dev meson
 
-git clone https://github.com/jbenden/i3-gaps-rounded.git
-
-cd i3-gaps-rounded
-mkdir -p build
+git clone https://github.com/jonaburg/picom picom-fork
+cd picom-fork
+meson --prefix /usr/local --buildtype=release . build
 cd build
-read
-# wait for checking
-meson --prefix /usr/local
 ninja
-sudo ninja install
-
-sudo apt install -t bullseye-backports feh i3blocks i3lock i3status suckless-tools xorg -y
-sudo apt install neofetch hsetroot flameshot lolcat mesa-utils -y
-# mesa-utils for opengl glxinfo
-
-ln -s ~/.config/local/* ~/
-
-# ? alacritty
-# https://github.com/barnumbirr/alacritty-debian
-wget -L -O alacritty.deb https://github.com/barnumbirr/alacritty-debian/releases/download/v0.9.0-1/alacritty_0.9.0-1_amd64_debian_buster.deb
-sudo apt install gdebi
-sudo gdebi alacritty.deb
-
-# 4.19.1-non-git
+sudo ninja -C build install
