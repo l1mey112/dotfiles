@@ -25,3 +25,5 @@ ln -s ~/.config/local/* ~/
 wget -L -O alacritty.deb https://github.com/barnumbirr/alacritty-debian/releases/download/v0.9.0-1/alacritty_0.9.0-1_amd64_debian_buster.deb
 sudo apt install gdebi
 sudo gdebi alacritty.deb
+
+# 4.19.1-non-git
