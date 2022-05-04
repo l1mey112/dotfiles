@@ -27,3 +27,5 @@ sudo apt-file update -y
 
 echo -e "\e[0;32m### FINISHED ###\e[0m\n"
 echo welcome to the new world.
+read
+startx
