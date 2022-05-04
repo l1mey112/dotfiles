@@ -22,6 +22,9 @@ cp home/.Xresources ~   # mv home/.Xresources ~
 cp home/.xsettingsd ~   # mv home/.xsettingsd ~
 cp home/.bash_aliases ~ # mv home/.bash_aliases ~
 
+echo -e "\e[0;35m### installing fonts ###\e[0m"
+bash fonts/font-install.sh
+
 echo -e "\e[0;35m### finalising ###\e[0m"
 sudo apt update && sudo apt upgrade -y
 sudo apt-file update
