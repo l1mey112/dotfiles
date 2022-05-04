@@ -1,3 +1,4 @@
+clear
 cd $(dirname "$BASH_SOURCE")
 
 echo -e "\e[0;32m### INSTALLING ALL ###\e[0m\n"

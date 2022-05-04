@@ -1,4 +1,3 @@
-clear
 cd $(dirname "$BASH_SOURCE")
 sudo apt update
 

@@ -1,0 +1,12 @@
+# l-m.dev - 2022
+# this is a script to aid in uploading temporary binary data to s.l-m.dev
+# binary data lasts for 2 days (48 hours)
+
+# chmod +x slim-upload.sh
+
+# examples:
+# ./slim-upload.sh text.txt
+# ./slim-upload.sh file.bin
+
+curl -X POST --data-binary @$1 https://s.l-m.dev/api/b/
+echo ""
