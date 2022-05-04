@@ -14,8 +14,7 @@ echo -e "\e[0;35m### copying binaries/scripts ###\e[0m"
 chmod +x bin/*
 sudo cp bin/* /usr/local/bin/
 echo -e "\e[0;35m### copying dotfiles ###\e[0m"
-mkdir -p ~/.config/
-cp -r dotconfig/* ~/.config/ 
+bash copy_dots.sh
 echo -e "\e[0;35m### copying home dotfiles ###\e[0m"
 cp home/.xinitrc ~      # mv home/.xinitrc ~
 cp home/.Xresources ~   # mv home/.Xresources ~
