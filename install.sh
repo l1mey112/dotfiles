@@ -23,9 +23,10 @@ mv home/.bash_aliases ~
 
 echo -e "\e[0;35m### finalising ###\e[0m"
 sudo apt update && sudo apt upgrade -y
-sudo apt-file update -y
+sudo apt-file update
 git config --global user.email "liam12312390@gmail.com"
 git config --global user.name "liaml"
+sudo apt autoremove -y
 
 echo -e "\e[0;32m### FINISHED ###\e[0m\n"
 echo welcome to the new world.
