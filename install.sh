@@ -28,6 +28,7 @@ sudo apt-file update
 git config --global user.email "liam12312390@gmail.com"
 git config --global user.name "liaml"
 sudo apt autoremove -y
+sudo mkdir -p /root/.config/rclone/ # for copying later
 
 echo -e "\e[0;32m### FINISHED ###\e[0m\n"
 echo welcome to the new world.
