@@ -1,0 +1,70 @@
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[python]
+style = "blue bold"
+
+[nodejs]
+format = "[w/ node](bold italic fg:purple) [& $version](bold green) "
+
+
+[git_commit]
+commit_hash_length = 8
+style = "bold white"
+
+[git_status]
+conflicted = "⚔️ "
+ahead = "🏎️ 💨 ×${count} "
+behind = "🐢 ×${count} "
+diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count} "
+untracked = "🛤️  ×${count} "
+stashed = "📦 "
+modified = "📝 ×${count} "
+staged = "🗃️  ×${count} "
+renamed = "📛 ×${count} "
+deleted = "🗑️  ×${count} "
+style = "bright-white"
+format = "$all_status$ahead_behind"
+
+[directory]
+#truncation_length = 5
+format = "[→]($style) [$path]($style)[$lock_symbol]($lock_style) "
+style = "bold italic blue"
+
+[gcloud]
+disabled = true
+
+[aws]
+style = "bold #ffb86c"
+
+[character]
+error_symbol =   "[→ ✨](bold #FF0000)"
+success_symbol = "[→ ✨](bold #f8f8f2)"
+
+[cmd_duration]
+style = "bold #c634c9"
+# time taken to complete a command
+
+#[directory]
+#style = "bold #50fa7b"
+
+[git_branch]
+style = "bold #ff79c6"
+
+#[git_status]
+#style = "bold #ff5555"
+
+[vlang]
+format = "[via](purple bold) [$symbol](blue bold)  [$version](purple bold) "
+symbol = "🇻"
+
+[hostname]
+style = "bold #ff5555"
+
+[username]
+format = "[$user]($style) on "
+style_user = "bold #bd93f9"

@@ -27,3 +27,7 @@ meson --prefix /usr/local --buildtype=release . build
 cd build
 ninja
 sudo ninja install
+
+echo -e "\e[0;31m### starship terminal ###\e[0m"
+curl -sS https://starship.rs/install.sh | sh
+echo 'eval "$(starship init bash)"' >> ~/.bashrc
