@@ -14,7 +14,7 @@ chmod +x bin/*
 sudo cp bin/* /usr/local/bin/
 echo -e "\e[0;35m### copying dotfiles ###\e[0m"
 mkdir -p ~/.config/
-cp dotconfig/* ~/.config/
+cp -r dotconfig/* ~/.config/ 
 echo -e "\e[0;35m### 'moving' home dotfiles ###\e[0m"
 mv home/.xinitrc ~
 mv home/.Xresources ~
