@@ -1,0 +1,13 @@
+#!/bin/bash
+revert() {
+  rm /tmp/*screen*.png
+  xset dpms 0 0 0
+}
+trap revert HUP INT TERM
+xset +dpms dpms 0 0 5
+scrot /tmp/locking_screen.png
+convert -blur 0x32 /tmp/locking_screen.png /tmp/screen_blur.png
+#convert +noise Multiplicative -attenuate 0.4 /tmp/screen_blur.png /tmp/screen_blur.png
+i3lock -e -u -i /tmp/screen_blur.png
+
+revert

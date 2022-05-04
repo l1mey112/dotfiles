@@ -1,0 +1,10 @@
+snapd
+gdebi-core
+zip
+unzip
+
+python3
+ffmpeg
+rclone
+
+apt-file

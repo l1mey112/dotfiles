@@ -1,0 +1,27 @@
+- **/node_modules**
+- **/dist** #vite
+
+- **/.git**
+- .git/**
+- **.git**
+
+- **/.Trash** #trash for trash-put
+- **.Trash**
+
+- **/MeshroomCache**
+- **/xampp**
+
+- **/googlemaps**
+
+- $RECYCLE.BIN/**
+- System Volume Information/**
+
+- SCANS/**.jpeg
+- SCANS/**.jpg
+
+- **.vdb
+- **.bphys
+- **.uni
+- **.bobj.gz
+
+- ASSETS/botaniq_install/**
