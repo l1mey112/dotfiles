@@ -10,3 +10,5 @@ cp home/.bash_aliases ~ # mv home/.bash_aliases ~
 
 chmod +x bin/*
 sudo cp bin/* /usr/local/bin/
+
+source ~/.bashrc

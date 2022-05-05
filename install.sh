@@ -32,6 +32,10 @@ git config --global user.name "liaml"
 sudo apt autoremove -y
 sudo mkdir -p /root/.config/rclone/ # for copying later
 
+# enable shutdown without sudo
+sudo chmod 4755 /sbin/shutdown
+sudo ln -s /sbin/shutdown /usr/bin/
+
 echo -e "\e[0;32m### FINISHED ###\e[0m\n"
 echo welcome to the new world.
 read
