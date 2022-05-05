@@ -28,7 +28,7 @@ gaps outer 2
 #border_radius 8
 
 # inverse scrolling for touchpad (right way!)
-exec synclient --no-startup-id VertScrollDelta=-111
+exec synclient --no-startup-id VertScrollDelta=111
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
