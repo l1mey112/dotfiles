@@ -9,9 +9,15 @@ alias utar="tar -xvzf"
 alias ztar="tar -cvzf"
 alias fm="xdg-open"
 
+gpush(){
+git add .
+git commit -m "$@"
+git push
+}
+
 HOME_DIR="$HOME"
-alias copy-from="sudo copysync_filter.py from $HOME_DIR/MREMOTE/ $HOME_DIR/.config/filters_py"
-alias copy-to="sudo copysync_filter.py to $HOME_DIR/MREMOTE/ $HOME_DIR/.config/filters_py"
+alias copy-from="sudo python3 /usr/local/bin/copysync_filter.py from $HOME_DIR/MREMOTE/ $HOME_DIR/.config/filters_py"
+alias copy-to="sudo python3 /usr/local/bin/copysync_filter.py to $HOME_DIR/MREMOTE/ $HOME_DIR/.config/filters_py"
 
 alias sz="du -sh"
 
