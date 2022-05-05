@@ -11,8 +11,9 @@ alias fm="xdg-open"
 
 gpush(){
 	git add .
-	if [ "$#" -e 1 ]; then
-		git commit -m "$(eval date )"
+	if [ "$#" -e 0 ]; then
+		echo -e "\e[0;32m+ automatic commit message\ee[0m[0m\"
+		git commit -m "$(eval date)"
 	else
 		git commit -m "$@"	
 	fi
