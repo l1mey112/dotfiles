@@ -11,12 +11,12 @@ alias fm="xdg-open"
 
 gpush(){
 	git add .
-	if [ "$#" -eq 0 ]; then
-		echo -e "\e[0;32m+ automatic commit message\ee[0m[0m\"
-		git commit -m "$(eval date)"
-	else
+#	if ((test $# -eq 0)); then
+#		echo -e "\e[0;32m+ automatic commit message\ee[0m[0m\"
+#		git commit -m "$(eval date)"
+#	else
 		git commit -m "$@"	
-	fi
+#	fi
 	git push
 }
 
@@ -30,6 +30,7 @@ alias c="clear"
 alias e="exit"
 
 alias cd="cd-with-ls"
+
 cd-with-ls(){
     if \cd $1; then
     clear
@@ -49,3 +50,4 @@ s(){
     clear
     ls
 }
+
