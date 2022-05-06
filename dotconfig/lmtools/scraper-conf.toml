@@ -1,0 +1,16 @@
+[cookies]
+cpsdid                       = 'fe307d30-c6b8-4c66-9850-90b18499071f'
+cpssid_cesis_catholic_edu_au = 'f2d03751-fe97-4e4c-9118-2fde00e9ec47'
+ASP_NET_SessionId            = 'f2d03751-fe97-4e4c-9118-2fde00e9ec47'
+SamlSessionIndex             = 'marcellinrandwick.catholic.edu.au_bf0378b8-a01c-42f4-807a-50418a8da81d'
+
+[panel]
+sizes   = [8, 10, 5, 6]
+padding = 5
+margin  = 3
+gap     = 0
+
+[advanced]
+url='https://marcellinrandwick-nsw.compass.education/Services/Calendar.svc/GetCalendarEventsByUser?sessionstate=readonly&_dc=1651485318332'
+origin='https://marcellinrandwick-nsw.compass.education'
+userid=3449
